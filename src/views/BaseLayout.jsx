@@ -11,10 +11,20 @@ const BaseLayout = () => {
         </h1>
         <div className="flex-grow-1"></div>
         <nav>
-          <ul className="nav">
-            <li className="nav-item">
+        <ul className="nav d-flex"> {/*  d-flex here */}
+            <li className="nav-item ms-2"> {/*  ms-2 for slight gap */}
               <Link className="nav-link" to="/available-cats">
                 Available Cats
+              </Link>
+            </li>
+            <li className="nav-item ms-2"> {/*  ms-2 for slight gap */}
+              <Link className="nav-link" to="/about-us">
+                About Us
+              </Link>
+            </li>
+            <li className="nav-item ms-2"> {/*  ms-2 for slight gap */}
+              <Link className="nav-link" to="/contact-us">
+                Contact Us
               </Link>
             </li>
           </ul>
